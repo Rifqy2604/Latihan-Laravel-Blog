@@ -16,7 +16,7 @@ URL: https://flowbite.com/docs/components/typography/
                         <img class="mr-4 w-16 h-16 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="Jese Leos">
                         <div>
                             <a href="#" rel="author" class="text-xl font-bold text-gray-900 dark:text-white">{{ $post->author->name }}</a>
-                            <p class="text-base text-gray-500 dark:text-gray-400">Graphic Designer, educator & CEO Flowbite</p>
+                            <p class="text-base text-gray-500 dark:text-gray-400">{{ $post->category->slug }}</p>
                             <p class="text-base text-gray-500 dark:text-gray-400">{{ $post->created_at->diffForHumans() }}</p>
                         </div>
                     </div>
